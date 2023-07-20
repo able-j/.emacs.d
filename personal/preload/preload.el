@@ -34,4 +34,8 @@
 (require 'company-tabnine)
 (add-to-list 'company-backends #'company-tabnine)
 
+;; set EasyPG pinentry mode
+(setq epa-pinentry-mode 'loopback)
+(pinentry-start)
+
 (setq prelude-theme 'moe-dark)
