@@ -31,4 +31,7 @@
 ;; magit bind
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(require 'company-tabnine)
+(add-to-list 'company-backends #'company-tabnine)
+
 (setq prelude-theme 'moe-dark)
