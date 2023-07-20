@@ -1,4 +1,5 @@
 (menu-bar-mode -1)
+(scroll-bar-mode -1)
 
 (setq org-agenda-files '("~/org"))
 
