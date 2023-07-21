@@ -38,4 +38,20 @@
 (setq epa-pinentry-mode 'loopback)
 (pinentry-start)
 
+;; enable shx
+(shx-global-mode 1)
+
+;; helm-spotify-plus
+(require 'helm-spotify-plus)
+(global-set-key (kbd "M-n s") 'helm-spotify-plus)
+(global-set-key (kbd "M-n f") 'helm-spotify-plus-next)
+(global-set-key (kbd "M-n b") 'helm-spotify-plus-previous)
+(global-set-key (kbd "M-n p") 'helm-spotify-plus-play)
+(global-set-key (kbd "M-n g") 'helm-spotify-plus-pause)
+
+
+
+;; bindings
+(global-set-key (kbd "C-x 7") 'kill-this-buffer)
+
 (setq prelude-theme 'moe-dark)
