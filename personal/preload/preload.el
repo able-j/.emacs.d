@@ -1,6 +1,8 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+(setq prelude-flyspell nil)
+
 (setq org-agenda-files '("~/org"))
 
 (setq org-hide-leading-stars t)
@@ -48,8 +50,6 @@
 (global-set-key (kbd "M-n b") 'helm-spotify-plus-previous)
 (global-set-key (kbd "M-n p") 'helm-spotify-plus-play)
 (global-set-key (kbd "M-n g") 'helm-spotify-plus-pause)
-
-
 
 ;; bindings
 (global-set-key (kbd "C-x 7") 'kill-this-buffer)

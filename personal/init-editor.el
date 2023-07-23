@@ -5,3 +5,9 @@
 
 (add-hook 'org-mode-hook 'disable-whitespace-line-limit)
 (add-hook 'markdown-mode-hook 'disable-whitespace-line-limit)
+
+(defun term-default ()
+  (interactive)
+  (term "/bin/fish"))
+
+(global-set-key (kbd "C-x M-x") 'term-default)
