@@ -3,11 +3,16 @@
   (interactive)
   (set (make-local-variable 'whitespace-line-column) 100000000))
 
-(add-hook 'org-mode-hook 'disable-whitespace-line-limit)
-(add-hook 'markdown-mode-hook 'disable-whitespace-line-limit)
+(add-hook 'org-mode-hook #'auto-fill-mode)
+
+;; (add-hook 'org-mode-hook 'disable-whitespace-line-limit)
+;; (add-hook 'markdown-mode-hook 'disable-whitespace-line-limit)
 
 (defun term-default ()
   (interactive)
   (term "/bin/fish"))
 
 (global-set-key (kbd "C-x M-x") 'term-default)
+
+(require 'lsp-mode)
+(add-hook 'prog-mode-hook #'lsp)
